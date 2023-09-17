@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 
 * {
   margin: 0;
@@ -662,51 +666,95 @@ form {
   align-items: center;
 }
 
-.strangeImage{
+.strangeImage {
   margin-top: 134px;
 }
 
-.Dashboard{
+.Dashboard {
   width: 100%;
   height: 100%;
   border: 1px solid red;
   display: flex;
-  gap: 32px; 
+  gap: 32px;
   padding-left: 32px;
-
 }
 
-.rightDashboard{
+.rightDashboard {
   width: 992px;
   height: 100%;
-  border:1px solid green;
+  border: 1px solid green;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.leftDashboard{
+.leftDashboard {
   height: 100%;
-  border:1px solid blue;
+  border: 1px solid blue;
 }
 
-.rightBelowDashboard{
+.rightBelowDashboard {
   height: 570px;
-  border:1px solid red;
+  border: 1px solid red;
   display: flex;
   gap: 30px;
 }
-.rightBelowDashboardleft{
+.rightBelowDashboardleft {
   width: 100%;
-  border:1px solid red;
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   gap: 17px;
   padding: 0 21px 0 21px;
-  
 }
 
-.rightBelowDashboardright{
+.rightBelowDashboardright {
   width: 100%;
   border: 1px solid red;
+}
+
+.event {
+  border: 1px solid black;
+}
+
+.event > span {
+  color: var(--1-a-1-c-1-d-primary, #1a1c1d);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+
+.event > div {
+  display: flex;
+  gap: 9px;
+}
+
+.event > div > a {
+  color: var(--8083-a-3, #8083a3);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 150% */
+}
+
+.event + span {
+  color: var(--8083-a-3, #8083a3);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+
+.renderEvent{
+  border:1px solid red;
+  width: 100%;
+  height: 68px;
+
 }

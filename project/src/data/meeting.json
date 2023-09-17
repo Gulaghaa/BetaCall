@@ -1,0 +1,69 @@
+{
+    "meetings":[
+        {
+            "id": "1",
+            "startingTime": "1:00",
+            "endingTime": "2:00",
+            "topic": "Effective Forms Advertising Internet",
+            "member": "Ora Johnston",
+            "profilePicture": ""
+        },
+        {
+            "id": "2",
+            "startingTime": "3:00",
+            "endingTime": "4:00",
+            "topic": "Get Best Advertiser Internet",
+            "member": "Eunice Nunez",
+            "profilePicture": ""
+        },
+        {
+            "id": "3",
+            "startingTime": "4:00",
+            "endingTime": "5:00",
+            "topic": "What is the Big R For Marketing",
+            "member": "Lucas Malone",
+            "profilePicture": ""
+        },
+        {
+            "id": "4",
+            "startingTime": "5:00",
+            "endingTime": "6:00",
+            "topic": "Branding Do You Know Who You Are",
+            "member": " Essie Herrera",
+            "profilePicture": ""
+        },
+        {
+            "id": "5",
+            "startingTime": "1:00",
+            "endingTime": "2:00",
+            "topic": "How To Put Movies On Iphone",
+            "member": "Lewis Santos",
+            "profilePicture": ""
+        },
+        {
+            "id": "6",
+            "startingTime": "3:00",
+            "endingTime": "4:00",
+            "topic": "Get The Boot A Birds Eye Look Into Mcse Boot Camps",
+            "member": "May Price",
+            "profilePicture": "" 
+        },
+        {
+            "id": "7",
+            "startingTime": "9:00",
+            "endingTime": "10:30",
+            "topic": "Effective Forms Advertising Internet ",
+            "member": "Helena Lane",
+            "profilePicture": "" 
+        },
+        {
+            "id": "8",
+            "startingTime": "2:00",
+            "endingTime": "3:00",
+            "topic": "Difficulties of Learning New Language",
+            "member": "Gulagha Abdullazada",
+            "profilePicture": "" 
+        }
+
+    ]
+}
