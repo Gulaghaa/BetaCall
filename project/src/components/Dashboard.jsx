@@ -31,7 +31,7 @@ export default function Dashboard() {
               <Route path={`${path}/home`}>
                 <span>Dashboard</span>
               </Route>
-              <Route path={`${path}/messanger`}>
+              <Route path={`${path}/messenger`}>
                 <span>Messenger</span>
               </Route>
               <Route path={`${path}/calls`}>
@@ -77,7 +77,7 @@ export default function Dashboard() {
               <Route path={`${path}/home`}>
                 <Home />
               </Route>
-              <Route path={`${path}/messanger`}>
+              <Route path={`${path}/messenger`}>
                 <span>Messenger</span>
               </Route>
               <Route path={`${path}/calls`}>

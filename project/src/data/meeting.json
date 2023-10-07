@@ -65,5 +65,136 @@
             "profilePicture": "" 
         }
 
-    ]
+    ],
+    "users":[
+        {
+            "id": "1",
+            "profilePicture":"",
+            "activeIndex":"6.3",
+            "passiveIndex":"4.1"
+        },
+        {
+            "id": "2",
+            "profilePicture":"",
+            "activeIndex":"9.5",
+            "passiveIndex":"3.6"
+        },
+        {
+            "id": "3",
+            "profilePicture":"",
+            "activeIndex":"10.8",
+            "passiveIndex":"7.6"
+        },
+        {
+            "id": "4",
+            "profilePicture":"",
+            "activeIndex":"6.8",
+            "passiveIndex":"8.1"
+        },
+        {
+            "id": "5",
+            "profilePicture":"",
+            "activeIndex":"12",
+            "passiveIndex":"5.9"
+        },
+        {
+            "id": "6",
+            "profilePicture":"",
+            "activeIndex":"11.3",
+            "passiveIndex":"6.4"
+        },
+        {
+            "id": "7",
+            "profilePicture":"",
+            "activeIndex":"7.3",
+            "passiveIndex":"7.1"
+        },
+        {
+            "id": "8",
+            "profilePicture":"",
+            "activeIndex":"8.7",
+            "passiveIndex":"6.2"
+        },
+        {
+            "id": "9",
+            "profilePicture":"",
+            "activeIndex":"6.8",
+            "passiveIndex":"8.1"
+        },
+        {
+            "id": "10",
+            "profilePicture":"",
+            "activeIndex":"12",
+            "passiveIndex":"5.9"
+        },
+        {
+            "id": "11",
+            "profilePicture":"",
+            "activeIndex":"8.7",
+            "passiveIndex":"6.2"
+        },
+        {
+            "id": "12",
+            "profilePicture":"",
+            "activeIndex":"6.8",
+            "passiveIndex":"8.1"
+        }
+    ],
+    "contacts":[
+        {
+            "id": "1",
+            "fullName": "Nicholas Gordon",
+            "position": "Developer"
+        },
+        {
+            "id": "2",
+            "fullName": "Bradley Malone",
+            "position": "Sales Manager"
+        },
+        {
+            "id": "3",
+            "fullName": "Marvin Lambert",
+            "position": "Designer"
+        },
+        {
+            "id": "4",
+            "fullName": "Teresa Lloyd",
+            "position": "PR agents"
+        },
+        {
+            "id": "5",
+            "fullName": "Fred Haynes",
+            "position": "Support Team"
+        },
+        {
+            "id": "6",
+            "fullName": "Rose Peters",
+            "position": "Project Manager"
+        },
+        {
+            "id": "7",
+            "fullName": "Brian Watson",
+            "position": "Developer"
+        },
+        {
+            "id": "8",
+            "fullName": "Bradley Malone",
+            "position": "Sales Manager"
+        },
+        {
+            "id": "9",
+            "fullName": "Marvin Lambert",
+            "position": "Designer"
+        },
+        {
+            "id": "10",
+            "fullName": "Teresa Lloyd",
+            "position": "PR agents"
+        },
+        {
+            "id": "11",
+            "fullName": "Fred Haynes",
+            "position": "Support Team"
+        }
+    ]      
 }

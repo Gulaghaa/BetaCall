@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 * {
   margin: 0;
@@ -672,49 +671,56 @@ form {
 
 .Dashboard {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   border: 1px solid red;
   display: flex;
   gap: 32px;
   padding-left: 32px;
+  padding-bottom: 32px;
 }
 
 .rightDashboard {
-  width: 992px;
-  height: 100%;
+  /* width: 992px; */
+  width: 75%;
+  /* height: 100%; */
   border: 1px solid green;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 32px;
 }
 
 .leftDashboard {
-  height: 100%;
+  width: 25%;
+  /* height: 100%; */
   border: 1px solid blue;
 }
 
 .rightBelowDashboard {
-  height: 570px;
-  border: 1px solid red;
+  height: 586px;
   display: flex;
-  gap: 30px;
+  gap: 3%;
 }
 .rightBelowDashboardleft {
-  width: 100%;
-  border: 1px solid red;
+  width: 53%;
   display: flex;
   flex-direction: column;
   gap: 17px;
   padding: 0 21px 0 21px;
+  border-radius: 8px;
+  border: 1px solid var(--outline-eceef-5, #eceef5);
+  background: var(--ffffff, #fff);
 }
 
 .rightBelowDashboardright {
-  width: 100%;
+  width: 44%;
   border: 1px solid red;
 }
-
-.event {
+.rightBelowDashboardright > div {
   border: 1px solid black;
+  border: 1px solid var(--outline-eceef-5, #eceef5);
+  background: var(--ffffff, #fff);
+  padding: 0 23px;
 }
 
 .event > span {
@@ -752,9 +758,85 @@ form {
   line-height: 21px; /* 150% */
 }
 
-.renderEvent{
-  border:1px solid red;
+.renderEvent {
+  /* border: 1px solid red; */
   width: 100%;
   height: 68px;
+}
 
+
+
+.scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+.wrapContent {
+  border-radius: 6px;
+  border: 1px solid var(--outline-eceef-5, #eceef5);
+  background: var(--ffffff, #fff);
+  width: 48%;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+.wrapContent > span {
+  color: var(--8083-a-3, #8083a3);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 150% */
+}
+
+.wrapContent:hover {
+  background: var(--f-8-f-9-fc, #f8f9fc);
+  cursor: pointer;
+}
+.wrapContent:hover > span {
+  color: var(--6-b-59-cc-primary, #6b59cc);
+}
+
+.wrapContent:hover > img {
+  filter: brightness(0) saturate(100%) invert(41%) sepia(13%) saturate(3844%)
+    hue-rotate(215deg) brightness(89%) contrast(90%);
+}
+
+
+@media only screen and (max-width: 1510px) {
+  .wrapContainer{
+    gap: 10px;
+  }
+  .wrapContent{
+    width: 48%;
+  }
+}
+
+
+@media only screen and (max-width: 1447px) {
+  .wrapContainer{
+    gap: 5px;
+  }
+  .wrapContent{
+    width: 49%;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 1295px) {
+  .wrapContainer{
+    flex-direction: column;
+    height: 175px;
+    border: 1px solid black;
+    gap: 1px;
+  }
+
+  .wrapContent{
+    width: 100%;
+    height: 21%;
+  }
 }

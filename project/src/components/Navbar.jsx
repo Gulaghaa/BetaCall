@@ -23,7 +23,7 @@ export default function Navbar({ isOpen  }) {
       <img src={isOpen ? long : short} />
       <div className='navbarText'>
         <NavLink to={`${url}/home`} activeClassName={isOpen ? 'active-class' : 'active-class-closed'} className='navlink'><NavbarComponent src={home} text={'Dashboard'} isOpen={isOpen} /></NavLink>
-        <NavLink to={`${url}/messanger`} activeClassName={isOpen ? 'active-class' : 'active-class-closed'} className='navlink'> <NavbarComponent src={message} text={'Messanger'} isOpen={isOpen} /></NavLink>
+        <NavLink to={`${url}/messenger`} activeClassName={isOpen ? 'active-class' : 'active-class-closed'} className='navlink'> <NavbarComponent src={message} text={'Messanger'} isOpen={isOpen} /></NavLink>
         <NavLink to={`${url}/calls`} activeClassName={isOpen ? 'active-class' : 'active-class-closed'} className='navlink'><NavbarComponent src={calls} text={'Calls'} isOpen={isOpen} /></NavLink>
         <NavLink to={`${url}/conference`} exact activeClassName={isOpen ? 'active-class' : 'active-class-closed'} className='navlink'><NavbarComponent src={conference} text={'Conference'} isOpen={isOpen} /></NavLink>
         <NavLink to={`${url}/contacts`} exact activeClassName={isOpen ? 'active-class' : 'active-class-closed'} className='navlink'><NavbarComponent src={contact} text={'Contacts'} isOpen={isOpen} /></NavLink>
