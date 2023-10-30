@@ -144,57 +144,68 @@
         {
             "id": "1",
             "fullName": "Nicholas Gordon",
-            "position": "Developer"
+            "position": "Developer",
+            "phoneNumber": "490-645-3877"
         },
         {
             "id": "2",
             "fullName": "Bradley Malone",
-            "position": "Sales Manager"
+            "position": "Sales Manager",
+            "phoneNumber": "940-724-0374"
         },
         {
             "id": "3",
             "fullName": "Marvin Lambert",
-            "position": "Designer"
+            "position": "Designer",
+            "phoneNumber": "171-867-8227"
         },
         {
             "id": "4",
             "fullName": "Teresa Lloyd",
-            "position": "PR agents"
+            "position": "PR agents",
+            "phoneNumber": "487-646-4629"
         },
         {
             "id": "5",
             "fullName": "Fred Haynes",
-            "position": "Support Team"
+            "position": "Support Team",
+            "phoneNumber": "171-867-8227"
         },
         {
             "id": "6",
             "fullName": "Rose Peters",
-            "position": "Project Manager"
+            "position": "Project Manager",
+            "phoneNumber": "487-646-4629"
         },
         {
             "id": "7",
             "fullName": "Brian Watson",
-            "position": "Developer"
+            "position": "Developer",
+            "phoneNumber": "171-867-8227"
         },
         {
             "id": "8",
             "fullName": "Bradley Malone",
-            "position": "Sales Manager"
+            "position": "Sales Manager",
+            "phoneNumber": "487-646-4629"
         },
         {
             "id": "9",
             "fullName": "Marvin Lambert",
-            "position": "Designer"
+            "position": "Designer",
+            "phoneNumber": "171-867-8227"
         },
         {
             "id": "10",
             "fullName": "Teresa Lloyd",
-            "position": "PR agents"
+            "position": "PR agents",
+            "phoneNumber": "171-867-8227"
         },
         {
             "id": "11",
             "fullName": "Fred Haynes",
-            "position": "Support Team"
+            "position": "Support Team",
+            "phoneNumber": "171-867-8227"
         }
     ]      
 }
