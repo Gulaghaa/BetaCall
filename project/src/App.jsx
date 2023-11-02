@@ -21,7 +21,7 @@ function App() {
   }
 
   return (
-    <Router basename="BetaCall">
+    <Router >
 
       
         <div>
