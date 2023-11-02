@@ -263,7 +263,7 @@ export default function Home() {
 
                         <div className="rightBelowDashboardright flex flex-col gap-[32px]">
                             <div className='w-full h-full rounded-[8px]'>
-                                <div className='w-full flex flex-col mt-[22px]' style={{ border: "1px solid black" }}>
+                                <div className='w-full flex flex-col mt-[22px]' >
                                     <span className='font-lato text-[16px] not-italic font-bold leading-[24px]' style={{ color: "#1A1C1D", fontFeatureSettings: "'clig' off, 'liga' off" }}>Quick actions</span>
                                     <span className='font-lato text-[14px] not-italic font-normal leading-[21px]' style={{ color: "#8083A3", fontFeatureSettings: "'clig' off, 'liga' off" }}>Plan a meeting or start a call</span>
                                 </div>
@@ -298,7 +298,7 @@ export default function Home() {
                                     </div>
                                     <span>Week to week performance</span>
                                 </div>
-                                <div className='flex h-[166px] gap-[16px] overflow-x-auto scrollbar' style={{ border: "1px solid black", marginTop: "23px" }}>
+                                <div className='flex h-[166px] gap-[16px] overflow-x-auto scrollbar' style={{ marginTop: "23px" }}>
                                     {userData != [] ?
                                         userData.map((e) => {
                                             return (
@@ -330,13 +330,13 @@ export default function Home() {
                         <span className='font-lato text-[16px] not-italic font-bold leading-[24px]' style={{ color: "#1A1C1D", fontFeatureSettings: "'clig' off, 'liga' off" }}>Recent Contacts</span>
                         <span className='font-lato text-[12px] not-italic font-normal leading-[21px]' style={{ color: "#8083A3", fontFeatureSettings: "'clig' off, 'liga' off" }}>Your previous chats and calls</span>
                     </div>
-                    <div className={`flex flex-col gap-[11px] h-[700px] mt-[27px] overflow-scroll scrollbar ${window.innerWidth > 710 ? 'responsiveDesignContact' : 'full'} `} style={{ border: "1px solid black" }}>
+                    <div className={`flex flex-col gap-[11px] h-[700px] mt-[27px] overflow-scroll scrollbar ${window.innerWidth > 710 ? 'responsiveDesignContact' : 'full'} `} >
                         {contactData != [] ?
                             contactData.map((e) => {
                                 return (
                                     <div className={`flex justify-between ${window.innerWidth > 710 ? 'responsiveContactCard' : ''} `} key={e.id}>
-                                        <div className={`flex gap-[18px] justify-center items-center h-[68px] ${window.innerWidth > 710 ? 'responsivePart' : ''}`} style={{ border: "1px solid black" }}>
-                                            <div className='relative w-[38px] h-[38px]' style={{ backgroundImage: `url(${contactImage})`, backgroundRepeat: "no-repeat", border: "1px solid black" }}>
+                                        <div className={`flex gap-[18px] justify-center items-center h-[68px] ${window.innerWidth > 710 ? 'responsivePart' : ''}`} >
+                                            <div className='relative w-[38px] h-[38px]' style={{ backgroundImage: `url(${contactImage})`, backgroundRepeat: "no-repeat"}}>
                                                 <div className='absolute bottom-[-4px] right-[-4px] w-[12px] h-[12px] aspect-square rounded-full flex justify-center items-center' style={{ backgroundColor: "#FFFF" }}>
                                                     <div className='w-[8px] h-[8px]  aspect-square rounded-full' style={{ backgroundColor: "#28C345 " }}></div>
                                                 </div>

@@ -21,12 +21,12 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename="BetaCall">
 
       
         <div>
         <Switch>
-          <Route exact path='/'>
+          <Route exact path='/' >
             <LoginContainer getStatus={getStatus} routing={routing} />
             {routing ? (
               <div className="GoToHome">
