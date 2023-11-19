@@ -1,5 +1,4 @@
 import React from 'react'
-import { Formik, useFormik } from 'formik'
 
 export default function Input({ src, text, property, placeholder, uniqId, values, onchange }) {
     return (

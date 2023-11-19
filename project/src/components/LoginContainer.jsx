@@ -8,10 +8,13 @@ import { useState } from 'react'
 import { Formik, useFormik } from "formik";
 import * as Yup from 'yup';
 import { NavLink } from 'react-router-dom/cjs/react-router-dom.min'
+import ReactCountryFlag from "react-country-flag"
+import LanguageDropdown from './LanguageDropDown'
 
 
 
-export default function LoginContainer({getStatus , routing}) {
+
+export default function LoginContainer({ getStatus, routing, changeLanguagetoAz, changeLanguagetoEng , selectLanguage }) {
 
 
 
@@ -41,10 +44,10 @@ export default function LoginContainer({getStatus , routing}) {
         }
     });
 
-    useEffect(()=>{
+    useEffect(() => {
         getStatus(signUpProcess)
 
-    },[signUpProcess])
+    }, [signUpProcess])
 
 
 
@@ -57,31 +60,34 @@ export default function LoginContainer({getStatus , routing}) {
 
     return (
         <div className='LoginContainer'>
-        
+
 
             <div className="login_upper">
                 <img src={logo} />
-               <NavLink to='/sign-in'><button className='SignInButton'>Sign In</button></NavLink>
+                <div style={{display:'flex' ,  justifyContent: 'center' , alignItems: 'center' , gap: '10px'}}>
+                    <LanguageDropdown changeLanguagetoAz = {changeLanguagetoAz} changeLanguagetoEng = {changeLanguagetoEng}/>
+                    <NavLink to='/sign-in'><button className='SignInButton'>{selectLanguage ? 'Daxil olun' : 'Sign In'}</button></NavLink>
+                </div>
             </div>
 
 
             {signUpProcess == 'continues' ? <div className="signInfo">
-                {!status ? <span>Welcome to BetaCall <span> Sign Up to getting started.</span></span> : <span>Tell us more about yourself</span>
+                {!status ? <span>{selectLanguage ? 'BetaCall-a xoş gəlmisiniz' : 'Welcome to BetaCall' } <span> {selectLanguage ? 'Başlamaq üçün qeydiyyatdan keçin.' :'Sign Up to getting started.'}</span></span> : <span>{selectLanguage ?  'Özünüz haqqında bizə ətraflı məlumat verin' : 'Tell us more about yourself'}</span>
                 }
-                <span>Enter your details to proceed further</span>
+                <span>{selectLanguage ? 'Davam etmək üçün məlumatlarınızı daxil edin' : 'Enter your details to proceed further'}</span>
             </div> : null}
             {signUpProcess == 'continues' || formik.isSubmitting == false ? <form onSubmit={formik.handleSubmit}>
 
-                <Input src={input} text={'Email'} uniqId={'email'} values={formik.values.email} onchange={formik.handleChange} property={'email'} placeholder={'Enter your email'} />
-                <SignUp changeStatus={changeStatus} formik={formik} setSignUpProcess={setSignUpProcess} />
+                <Input src={input} text={selectLanguage ? 'E-poçt' : 'Email'} uniqId={'email'} values={formik.values.email} onchange={formik.handleChange} property={'email'} placeholder={selectLanguage ? 'E-poçtunuzu daxil edin' : 'Enter your email'} />
+                <SignUp changeStatus={changeStatus} formik={formik} setSignUpProcess={setSignUpProcess} selectLanguage = {selectLanguage} />
             </form> : null}
 
             {signUpProcess == 'finished' || formik.isSubmitting == true ? <div className='SignUpFinish'>
                 <img src={image} />
-                <span>Thank you</span>
-                <span>We have sent an email to {formik.values.email}</span>
-                <span>Click confirmation link in the email to verify your account</span>
-                <button style={{cursor:'pointer'}} className='buttonInsideFinish'>Resend Email</button>
+                <span>{selectLanguage ?  'Təşəkkür edirik': 'Thank you'}</span>
+                <span>{selectLanguage ? `${formik.values.email} ünvanına bir e-poçt göndərdik` : `We have sent an email to ${formik.values.email}`}</span>
+                <span>{selectLanguage ? 'Hesabınızı doğrulamaq üçün e-poçtdakı təsdiqləmə linkinə klikləyin' : 'Click confirmation link in the email to verify your account'}</span>
+                <button style={{ cursor: 'pointer' }} className='buttonInsideFinish'>{selectLanguage ? 'E-poçtu yenidən göndərin' :'Resend Email'}</button>
             </div> : null}
 
 

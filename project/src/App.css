@@ -29,11 +29,12 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #eee;
-  padding: 0 270px;
+  padding: 0 15%;
 }
 
 .SignInButton {
-  width: 116px;
+  /* width: 116px; */
+  padding: 0 34px;
   height: 44px;
   border-radius: 10px;
   border: 1px solid var(--eceef-5, #eceef5);
@@ -93,7 +94,8 @@ form {
   border-bottom: 1px solid var(--outline-eceef-5, #eceef5);
 }
 
-.SingUpCloseInput > label {
+.SingUpCloseInput > label,
+.countryLabel {
   color: var(--8083-a-3, #8083a3);
   font-family: "Lato";
   font-size: 14px;
@@ -186,7 +188,8 @@ form {
   background: var(--ffffff, #fff);
 }
 
-.checkboxInput > label:last-of-type {
+.checkboxInput > label:last-of-type,
+.templateOption > div:first-of-type > div:first-of-type > span:first-of-type {
   color: var(--8083-a-3, #8083a3);
   font-family: Lato;
   font-size: 14px;
@@ -740,7 +743,8 @@ form {
   gap: 9px;
 }
 
-.event > div > a {
+.event > div > a,
+.templateOption > div:first-of-type > div:first-of-type > span:last-of-type {
   color: var(--8083-a-3, #8083a3);
   font-feature-settings: "clig" off, "liga" off;
   font-family: Lato;
@@ -917,12 +921,14 @@ form {
   transform: translateY(100%);
 }
 
-.mobileNavbar {
+.mobileNavbar,
+.settingTemplate > div:first-of-type {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 46px;
+  gap: 11px;
 }
 
 .mobileNavbar > img {
@@ -932,13 +938,15 @@ form {
   aspect-ratio: 1/1;
 }
 
-.mobileNavbar > div {
+.mobileNavbar > div,
+.settingTemplate > div:first-of-type > div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.mobileNavbar > div > span:first-of-type {
+.mobileNavbar > div > span:first-of-type,
+.templateName {
   color: var(--1-a-1-c-1-d-primary, #1a1c1d);
   font-feature-settings: "clig" off, "liga" off;
   font-family: Lato;
@@ -948,7 +956,8 @@ form {
   line-height: 32px; /* 160% */
 }
 
-.mobileNavbar > div > span:nth-of-type(2) {
+.mobileNavbar > div > span:nth-of-type(2),
+.settingTemplate > div:first-of-type > div > span:nth-of-type(2) {
   color: var(--8083-a-3, #8083a3);
   font-feature-settings: "clig" off, "liga" off;
   font-family: Lato;
@@ -1006,8 +1015,147 @@ form {
 .blackActive > img {
   filter: brightness(0%);
 }
-.blackActive > span{
+.blackActive > span {
   color: black !important;
+}
+
+.settingTemplate {
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid #eceef5;
+}
+
+.templateOption:last-of-type {
+  border-bottom: none !important;
+}
+
+.templateNavlink > div {
+  background-color: #f8f9fc;
+}
+
+.templateNavlink > div > div > span:first-of-type,
+.templateNavlink > div > img {
+  color: #6b59cc !important;
+  filter: brightness(0) saturate(100%) invert(41%) sepia(13%) saturate(3844%)
+    hue-rotate(215deg) brightness(89%) contrast(90%) !important;
+}
+
+.companySetting > span:first-of-type {
+  color: var(--1-a-1-c-1-d-primary, #1a1c1d);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+}
+.countrySelect {
+  height: 72px;
+  width: 45%;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.countrySelect > select > option {
+  color: var(--1-a-1-c-1-d-primary, #1a1c1d);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.companySetting > div > .SingUpCloseInput {
+  width: 45%;
+  margin-bottom: 12px;
+}
+
+.countryLine {
+  border-bottom: 1px solid var(--outline-eceef-5, #eceef5);
+}
+
+.buttonPart {
+  position: fixed;
+  bottom: 10px;
+  width: 68%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.buttonPart > div:first-of-type {
+  display: flex;
+  gap: 8px;
+}
+
+.buttonPart > div:first-of-type > button:first-of-type {
+  width: 172px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--6-b-59-cc-primary, #6b59cc);
+  color: var(--ffffff, #fff);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
+
+.buttonPart > div:first-of-type > button:last-of-type {
+  width: 128px;
+  height: 50px;
+  flex-shrink: 0;
+  color: var(--8083-a-3, #8083a3);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 10px;
+  border: 1px solid var(--outline-eceef-5, #eceef5);
+  background: var(--ffffff, #fff);
+}
+
+.buttonPart > button {
+  width: 198px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid var(--outline-eceef-5, #eceef5);
+  background: var(--ffffff, #fff);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--8083-a-3, #8083a3);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.companyFormContainer {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
 }
 
 @media only screen and (max-width: 1510px) {
@@ -1105,6 +1253,7 @@ form {
     display: flex;
     width: 250px;
     flex-direction: column;
+    z-index: 100;
   }
 
   .searchOpen {
@@ -1331,6 +1480,4 @@ form {
   .navbarText > button {
     display: block;
   }
-
-  
 }

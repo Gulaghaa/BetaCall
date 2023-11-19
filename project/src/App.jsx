@@ -11,6 +11,21 @@ import Recover from "./components/Recover";
 
 function App() {
   const [routing, setRouting] = useState(false);
+  const [selectLanguage, setSelectLanguage] = useState(true);
+
+  const changeLanguagetoEng = () => {
+    if (selectLanguage) {
+      setSelectLanguage(false);
+      localStorage.setItem("language", false);
+    }
+  };
+
+  const changeLanguagetoAz = () => {
+    if (!selectLanguage) {
+      setSelectLanguage(true);
+      localStorage.setItem("language", true);
+    }
+  };
 
   function getStatus(e) {
     if (e == "finished") {
@@ -20,38 +35,51 @@ function App() {
     }
   }
 
+  console.log(selectLanguage);
   return (
-    <Router >
-
-      
-        <div>
+    <Router>
+      <div>
         <Switch>
-          <Route exact path='/' >
-            <LoginContainer getStatus={getStatus} routing={routing} />
+          <Route exact path="/">
+            <LoginContainer
+              getStatus={getStatus}
+              routing={routing}
+              changeLanguagetoAz={changeLanguagetoAz}
+              changeLanguagetoEng={changeLanguagetoEng}
+              selectLanguage={selectLanguage}
+            />
             {routing ? (
               <div className="GoToHome">
-                <NavLink to='/dashboard/home' exact>
+                <NavLink to="/dashboard/home" exact>
                   <button
                     style={{ cursor: "pointer" }}
-                    className="buttonInsideFinish" >
-                    Go to Home
+                    className="buttonInsideFinish"
+                  >
+                    {selectLanguage ? "Əsas səhifəyə gedin" : "Go to Home"}
                   </button>
                 </NavLink>
               </div>
             ) : null}
           </Route>
-          <Route exact path='/sign-in'>
-            <SignIn />
+          <Route exact path="/sign-in">
+            <SignIn
+              changeLanguagetoAz={changeLanguagetoAz}
+              changeLanguagetoEng={changeLanguagetoEng}
+              selectLanguage={selectLanguage}
+            />
           </Route>
-          <Route path='/dashboard'>
+          <Route path="/dashboard">
             <Dashboard />
           </Route>
-          <Route exact path='/sign-in/recover' >
-            <Recover />
+          <Route exact path="/sign-in/recover">
+            <Recover
+              selectLanguage={selectLanguage}
+              changeLanguagetoAz={changeLanguagetoAz}
+              changeLanguagetoEng={changeLanguagetoEng}
+            />
           </Route>
-          </Switch>
-        </div>
-      
+        </Switch>
+      </div>
     </Router>
   );
 }

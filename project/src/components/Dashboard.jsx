@@ -13,6 +13,7 @@ import search from "../assets/Search.svg";
 import img from "../assets/Img.svg";
 import Lbutton from '../assets/LButton.svg'
 import { IoIosArrowDropright } from "react-icons/io"
+import Setting from "./Settings/Setting";
 export default function Dashboard() {
   const [isOpen, setIsOpen] = useState(false);
   const { path, url } = useRouteMatch();
@@ -167,7 +168,7 @@ export default function Dashboard() {
             <span>Schedule</span>
           </Route>
           <Route path={`${path}/settings`}>
-            <span>Settings</span>
+            <Setting />
           </Route>
         </Switch>
       </div>
