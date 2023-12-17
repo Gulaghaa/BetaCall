@@ -20,7 +20,7 @@ export default function SignUpLong({formik , setSignUpProcess , selectLanguage }
         <Input text={selectLanguage ? 'Şifrəni təsdiqləyin' : 'Confirm password'} src={done} property={'password' } uniqId={'confirmation'} values={formik.values.confirmation} onchange={formik.handleChange} placeholder={selectLanguage ? 'Şifrənizi təsdiqləyin' : 'Confirm your password'} />
       </div>
       <RadioInput text={selectLanguage ? 'Qaydalar və şərtlərlə razıyam' : 'I agree with terms & conditions'} name={'checked'} onchange={formik.handleChange} formik = {formik} values = {'Agreement'} />
-      <button type='submit'  className="bigPurplebutton" onClick={()=>setSignUpProcess('finished')} disabled={Object.keys(formik.errors).length!==0 ? true : false}  style={{backgroundColor: Object.keys(formik.errors).length!==0 ?'#a090fb' : null, cursor: Object.keys(formik.errors).length!==0 ? 'not-allowed' : null}}>{selectLanguage ? 'Davam edin' : 'Continue'}</button>
+      <button type='submit'  className="bigPurplebutton"  disabled={Object.keys(formik.errors).length!==0 ? true : false}  style={{backgroundColor: Object.keys(formik.errors).length!==0 ?'#a090fb' : null, cursor: Object.keys(formik.errors).length!==0 ? 'not-allowed' : null}}>{selectLanguage ? 'Davam edin' : 'Continue'}</button>
       
 
 

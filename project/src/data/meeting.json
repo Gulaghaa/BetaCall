@@ -1,211 +1,224 @@
 {
-    "meetings":[
-        {
-            "id": "1",
-            "startingTime": "1:00",
-            "endingTime": "2:00",
-            "topic": "Effective Forms Advertising Internet",
-            "member": "Ora Johnston",
-            "profilePicture": ""
-        },
-        {
-            "id": "2",
-            "startingTime": "3:00",
-            "endingTime": "4:00",
-            "topic": "Get Best Advertiser Internet",
-            "member": "Eunice Nunez",
-            "profilePicture": ""
-        },
-        {
-            "id": "3",
-            "startingTime": "4:00",
-            "endingTime": "5:00",
-            "topic": "What is the Big R For Marketing",
-            "member": "Lucas Malone",
-            "profilePicture": ""
-        },
-        {
-            "id": "4",
-            "startingTime": "5:00",
-            "endingTime": "6:00",
-            "topic": "Branding Do You Know Who You Are",
-            "member": " Essie Herrera",
-            "profilePicture": ""
-        },
-        {
-            "id": "5",
-            "startingTime": "1:00",
-            "endingTime": "2:00",
-            "topic": "How To Put Movies On Iphone",
-            "member": "Lewis Santos",
-            "profilePicture": ""
-        },
-        {
-            "id": "6",
-            "startingTime": "3:00",
-            "endingTime": "4:00",
-            "topic": "Get The Boot A Birds Eye Look Into Mcse Boot Camps",
-            "member": "May Price",
-            "profilePicture": "" 
-        },
-        {
-            "id": "7",
-            "startingTime": "9:00",
-            "endingTime": "10:30",
-            "topic": "Effective Forms Advertising Internet ",
-            "member": "Helena Lane",
-            "profilePicture": "" 
-        },
-        {
-            "id": "8",
-            "startingTime": "2:00",
-            "endingTime": "3:00",
-            "topic": "Difficulties of Learning New Language",
-            "member": "Gulagha Abdullazada",
-            "profilePicture": "" 
-        }
-
-    ],
-    "users":[
-        {
-            "id": "1",
-            "profilePicture":"",
-            "activeIndex":"6.3",
-            "passiveIndex":"4.1"
-        },
-        {
-            "id": "2",
-            "profilePicture":"",
-            "activeIndex":"9.5",
-            "passiveIndex":"3.6"
-        },
-        {
-            "id": "3",
-            "profilePicture":"",
-            "activeIndex":"10.8",
-            "passiveIndex":"7.6"
-        },
-        {
-            "id": "4",
-            "profilePicture":"",
-            "activeIndex":"6.8",
-            "passiveIndex":"8.1"
-        },
-        {
-            "id": "5",
-            "profilePicture":"",
-            "activeIndex":"12",
-            "passiveIndex":"5.9"
-        },
-        {
-            "id": "6",
-            "profilePicture":"",
-            "activeIndex":"11.3",
-            "passiveIndex":"6.4"
-        },
-        {
-            "id": "7",
-            "profilePicture":"",
-            "activeIndex":"7.3",
-            "passiveIndex":"7.1"
-        },
-        {
-            "id": "8",
-            "profilePicture":"",
-            "activeIndex":"8.7",
-            "passiveIndex":"6.2"
-        },
-        {
-            "id": "9",
-            "profilePicture":"",
-            "activeIndex":"6.8",
-            "passiveIndex":"8.1"
-        },
-        {
-            "id": "10",
-            "profilePicture":"",
-            "activeIndex":"12",
-            "passiveIndex":"5.9"
-        },
-        {
-            "id": "11",
-            "profilePicture":"",
-            "activeIndex":"8.7",
-            "passiveIndex":"6.2"
-        },
-        {
-            "id": "12",
-            "profilePicture":"",
-            "activeIndex":"6.8",
-            "passiveIndex":"8.1"
-        }
-    ],
-    "contacts":[
-        {
-            "id": "1",
-            "fullName": "Nicholas Gordon",
-            "position": "Developer",
-            "phoneNumber": "490-645-3877"
-        },
-        {
-            "id": "2",
-            "fullName": "Bradley Malone",
-            "position": "Sales Manager",
-            "phoneNumber": "940-724-0374"
-        },
-        {
-            "id": "3",
-            "fullName": "Marvin Lambert",
-            "position": "Designer",
-            "phoneNumber": "171-867-8227"
-        },
-        {
-            "id": "4",
-            "fullName": "Teresa Lloyd",
-            "position": "PR agents",
-            "phoneNumber": "487-646-4629"
-        },
-        {
-            "id": "5",
-            "fullName": "Fred Haynes",
-            "position": "Support Team",
-            "phoneNumber": "171-867-8227"
-        },
-        {
-            "id": "6",
-            "fullName": "Rose Peters",
-            "position": "Project Manager",
-            "phoneNumber": "487-646-4629"
-        },
-        {
-            "id": "7",
-            "fullName": "Brian Watson",
-            "position": "Developer",
-            "phoneNumber": "171-867-8227"
-        },
-        {
-            "id": "8",
-            "fullName": "Bradley Malone",
-            "position": "Sales Manager",
-            "phoneNumber": "487-646-4629"
-        },
-        {
-            "id": "9",
-            "fullName": "Marvin Lambert",
-            "position": "Designer",
-            "phoneNumber": "171-867-8227"
-        },
-        {
-            "id": "10",
-            "fullName": "Teresa Lloyd",
-            "position": "PR agents",
-            "phoneNumber": "171-867-8227"
-        },
-        {
-            "id": "11",
-            "fullName": "Fred Haynes",
-            "position": "Support Team",
-            "phoneNumber": "171-867-8227"
-        }
-    ]      
+  "meetings": [
+    {
+      "id": "1",
+      "startingTime": "1:00",
+      "endingTime": "2:00",
+      "topic": "Effective Forms Advertising Internet",
+      "member": "Ora Johnston",
+      "profilePicture": ""
+    },
+    {
+      "id": "2",
+      "startingTime": "3:00",
+      "endingTime": "4:00",
+      "topic": "Get Best Advertiser Internet",
+      "member": "Eunice Nunez",
+      "profilePicture": ""
+    },
+    {
+      "id": "3",
+      "startingTime": "4:00",
+      "endingTime": "5:00",
+      "topic": "What is the Big R For Marketing",
+      "member": "Lucas Malone",
+      "profilePicture": ""
+    },
+    {
+      "id": "4",
+      "startingTime": "5:00",
+      "endingTime": "6:00",
+      "topic": "Branding Do You Know Who You Are",
+      "member": " Essie Herrera",
+      "profilePicture": ""
+    },
+    {
+      "id": "5",
+      "startingTime": "1:00",
+      "endingTime": "2:00",
+      "topic": "How To Put Movies On Iphone",
+      "member": "Lewis Santos",
+      "profilePicture": ""
+    },
+    {
+      "id": "6",
+      "startingTime": "3:00",
+      "endingTime": "4:00",
+      "topic": "Get The Boot A Birds Eye Look Into Mcse Boot Camps",
+      "member": "May Price",
+      "profilePicture": ""
+    },
+    {
+      "id": "7",
+      "startingTime": "9:00",
+      "endingTime": "10:30",
+      "topic": "Effective Forms Advertising Internet ",
+      "member": "Helena Lane",
+      "profilePicture": ""
+    },
+    {
+      "id": "8",
+      "startingTime": "2:00",
+      "endingTime": "3:00",
+      "topic": "Difficulties of Learning New Language",
+      "member": "Gulagha Abdullazada",
+      "profilePicture": ""
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "profilePicture": "",
+      "activeIndex": "6.3",
+      "passiveIndex": "4.1"
+    },
+    {
+      "id": "2",
+      "profilePicture": "",
+      "activeIndex": "9.5",
+      "passiveIndex": "3.6"
+    },
+    {
+      "id": "3",
+      "profilePicture": "",
+      "activeIndex": "10.8",
+      "passiveIndex": "7.6"
+    },
+    {
+      "id": "4",
+      "profilePicture": "",
+      "activeIndex": "6.8",
+      "passiveIndex": "8.1"
+    },
+    {
+      "id": "5",
+      "profilePicture": "",
+      "activeIndex": "12",
+      "passiveIndex": "5.9"
+    },
+    {
+      "id": "6",
+      "profilePicture": "",
+      "activeIndex": "11.3",
+      "passiveIndex": "6.4"
+    },
+    {
+      "id": "7",
+      "profilePicture": "",
+      "activeIndex": "7.3",
+      "passiveIndex": "7.1"
+    },
+    {
+      "id": "8",
+      "profilePicture": "",
+      "activeIndex": "8.7",
+      "passiveIndex": "6.2"
+    },
+    {
+      "id": "9",
+      "profilePicture": "",
+      "activeIndex": "6.8",
+      "passiveIndex": "8.1"
+    },
+    {
+      "id": "10",
+      "profilePicture": "",
+      "activeIndex": "12",
+      "passiveIndex": "5.9"
+    },
+    {
+      "id": "11",
+      "profilePicture": "",
+      "activeIndex": "8.7",
+      "passiveIndex": "6.2"
+    },
+    {
+      "id": "12",
+      "profilePicture": "",
+      "activeIndex": "6.8",
+      "passiveIndex": "8.1"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "1",
+      "fullName": "Nicholas Gordon",
+      "position": "Developer",
+      "category": "Business",
+      "phoneNumber": "490-645-3877"
+    },
+    {
+      "id": "2",
+      "fullName": "Bradley Malone",
+      "position": "Sales Manager",
+      "category": "Business",
+      "phoneNumber": "940-724-0374"
+    },
+    {
+      "id": "3",
+      "fullName": "Marvin Lambert",
+      "position": "Designer",
+      "category": "Business",
+      "phoneNumber": "171-867-8227"
+    },
+    {
+      "id": "4",
+      "fullName": "Teresa Lloyd",
+      "position": "PR agents",
+      "category": "Private",
+      "phoneNumber": "487-646-4629"
+    },
+    {
+      "id": "5",
+      "fullName": "Fred Haynes",
+      "position": "Support Team",
+      "category": "Business",
+      "phoneNumber": "171-867-8227"
+    },
+    {
+      "id": "6",
+      "fullName": "Rose Peters",
+      "position": "Project Manager",
+      "category": "Private",
+      "phoneNumber": "487-646-4629"
+    },
+    {
+      "id": "7",
+      "fullName": "Brian Watson",
+      "position": "Developer",
+      "category": "Private",
+      "phoneNumber": "171-867-8227"
+    },
+    {
+      "id": "8",
+      "fullName": "Bradley Malone",
+      "position": "Sales Manager",
+      "category": "Business",
+      "phoneNumber": "487-646-4629"
+    },
+    {
+      "id": "9",
+      "fullName": "Marvin Lambert",
+      "position": "Designer",
+      "category": "Business",
+      "phoneNumber": "171-867-8227"
+    },
+    {
+      "id": "10",
+      "fullName": "Teresa Lloyd",
+      "position": "PR agents",
+      "category": "Private",
+      "phoneNumber": "171-867-8227"
+    },
+    {
+      "id": "11",
+      "fullName": "Fred Haynes",
+      "position": "Support Team",
+      "category": "Business",
+      "phoneNumber": "171-867-8227"
+    }
+  ],
+  "registration": [
+    
+  ]
 }

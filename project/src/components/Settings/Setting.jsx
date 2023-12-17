@@ -11,11 +11,17 @@ import setting_3 from '../../assets/setting_3.svg'
 import setting_4 from '../../assets/setting_4.svg'
 import content from '../../assets/content.svg'
 import Company from './Company';
+import Users from './Users';
+import Integrations from './Integrations';
+
+
+
+
 
 function Setting() {
     const { url, path } = useRouteMatch();
     console.log(url)
-    
+
     const settingData = [
         {
             image: setting_1,
@@ -58,14 +64,14 @@ function Setting() {
                     <Route path={`${path}/company`}>
                         <Company />
                     </Route>
+                    <Route path={`${path}/users`}>
+                        <Users />
+                    </Route>
                     <Route path={`${path}/reports`}>
                         <div>Reports</div>
                     </Route>
-                    <Route path={`${path}/users`}>
-                        <div>Users</div>
-                    </Route>
                     <Route path={`${path}/integrations`}>
-                        <div>integration</div>
+                        <Integrations />
                     </Route>
                 </Switch>
             </div>

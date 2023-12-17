@@ -1040,7 +1040,9 @@ form {
     hue-rotate(215deg) brightness(89%) contrast(90%) !important;
 }
 
-.companySetting > span:first-of-type {
+.companySetting > span:first-of-type,
+.UserSetting > div:first-of-type > span,
+.Integrations > div:first-of-type {
   color: var(--1-a-1-c-1-d-primary, #1a1c1d);
   font-feature-settings: "clig" off, "liga" off;
   font-family: Lato;
@@ -1083,7 +1085,6 @@ form {
   width: 68%;
   display: flex;
   justify-content: space-between;
-
 }
 
 .buttonPart > div:first-of-type {
@@ -1157,6 +1158,153 @@ input::-webkit-inner-spin-button {
   flex-wrap: wrap;
   gap: 5%;
 }
+
+.nonActvUserBtn {
+  padding: 0 28px;
+  border: 1px solid var(--outline-eceef-5, transparent);
+  color: var(--8083-a-3, #8083a3);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.actvUserBtn {
+  padding: 0 28px;
+  border-radius: 8px;
+  border: 1px solid var(--outline-eceef-5, #eceef5);
+  background: var(--ffffff, #fff);
+  color: var(--1-a-1-c-1-d-primary, #1a1c1d);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px; /* 150% */
+}
+
+.orangeBtn {
+  padding: 0 20px;
+  display: grid;
+  height: 36px;
+  place-items: center;
+  color: var(--f-6933-e-primary, #f6933e);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  background-color: rgb(251, 239, 227);
+  border-radius: 10px;
+}
+
+.purpleBtn {
+  padding: 0 20px;
+  display: grid;
+  height: 36px;
+  place-items: center;
+  color: var(--6-b-59-cc-primary, #6b59cc);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px; /* 150% */
+  background-color: rgb(238, 240, 249);
+  border-radius: 10px;
+}
+
+.userContainer > div > div:first-of-type > span {
+  color: var(--1-a-1-c-1-d-primary, #1a1c1d);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+}
+.userContainer > div > div:last-of-type > select {
+  color: var(--1-a-1-c-1-d-primary, #1a1c1d);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  width: 180px;
+  border-bottom: 1px solid var(--outline-eceef-5, #eceef5);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.IntegrationSpan > span:first-of-type {
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px; /* 150% */
+}
+
+.IntegrationSpan > span:last-of-type {
+  color: var(--8083-a-3, #8083a3);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+
+/* ToggleSwitch.css */
+.toggle-container {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.toggle-input:checked + .toggle-slider {
+  background-color: #2196F3;
+}
+
+.toggle-input:checked + .toggle-slider:before {
+  transform: translateX(26px);
+}
+
 
 @media only screen and (max-width: 1510px) {
   .wrapContainer {

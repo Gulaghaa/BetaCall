@@ -12,7 +12,7 @@ export default function SettingTemplate({ mapData }) {
             <div>
                 <img src={mobileProfile} alt="description" className='w-[114px] h-[114px]' />
                 <div>
-                    <span className='templateName'>QulamHuseynmemmedov</span>
+                    <span className='templateName'>Flankes</span>
                     <span>This one is </span>
                 </div>
             </div>
