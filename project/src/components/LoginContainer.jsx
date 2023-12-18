@@ -1,27 +1,21 @@
-import React, { useEffect } from 'react'
-import logo from '../assets/Dark.svg'
-import input from '../assets/Icon.svg'
-import image from '../assets/signUp.svg'
-import SignUp from './SignUp'
-import Input from './Input'
-import { useState } from 'react'
-import { Formik, useFormik } from "formik";
+import React, { useEffect, useState } from 'react';
+import { useFormik } from "formik";
 import * as Yup from 'yup';
-import { NavLink } from 'react-router-dom/cjs/react-router-dom.min'
-import ReactCountryFlag from "react-country-flag"
-import LanguageDropdown from './LanguageDropDown'
-import axios from 'axios'
+import axios from 'axios';
+import { useHistory } from 'react-router-dom'; // Import useHistory
 
+import logo from '../assets/Dark.svg';
+import input from '../assets/Icon.svg';
+import image from '../assets/signUp.svg';
+import SignUp from './SignUp';
+import Input from './Input';
+import LanguageDropdown from './LanguageDropDown';
+import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 
-
-
-export default function LoginContainer({ getStatus, routing, changeLanguagetoAz, changeLanguagetoEng , selectLanguage }) {
-
-
-
-    const [status, setStatus] = useState(false)
-    const [signUpProcess, setSignUpProcess] = useState("continues")
-
+export default function LoginContainer({ getStatus, changeLanguagetoAz, changeLanguagetoEng, selectLanguage }) {
+    const [status, setStatus] = useState(false);
+    const [signUpProcess, setSignUpProcess] = useState("continues");
+    const history = useHistory(); // Create an instance of useHistory
 
     const formik = useFormik({
         initialValues: {
@@ -31,14 +25,13 @@ export default function LoginContainer({ getStatus, routing, changeLanguagetoAz,
             password: '',
             confirmation: '',
             checked: [],
-
         },
         validationSchema: Yup.object().shape({
             email: Yup.string().email('Invalid email address').required('Email is required'),
-            name: Yup.string().min(3, 'Name cannot be shorter than three string').max(12, 'Name cannot be larger than twelve string').required('Name is required'),
+            name: Yup.string().min(3, 'Name cannot be shorter than three characters').max(12, 'Name cannot be larger than twelve characters').required('Name is required'),
             surname: Yup.string().required('Surname is required'),
             password: Yup.string().required('No password provided.').min(8, 'Password is too short - should be 8 chars minimum.'),
-            confirmation: Yup.string().required('Please, confirm your passport').oneOf([Yup.ref('password'), null], 'Passwords must match')
+            confirmation: Yup.string().required('Please, confirm your password').oneOf([Yup.ref('password'), null], 'Passwords must match'),
         }),
         onSubmit: async (values) => {
             try {
@@ -56,37 +49,26 @@ export default function LoginContainer({ getStatus, routing, changeLanguagetoAz,
         
                 const registerResponse = await axios.post('http://localhost:3003/registration', values);
                 console.log('Registration successful:', registerResponse.data);
-                setSignUpProcess('finished')
+                setSignUpProcess('finished');
                 alert("Registration successful!");
+
+                // Redirect to the sign-in page
+                history.push('/sign-in');
         
             } catch (error) {
                 console.error('An error occurred:', error);
                 alert("An error occurred during registration. Please try again.");
             }
         }
-        
-        
-        
     });
 
-
-    console.log(signUpProcess)
-    console.log(formik)
-
-
-
     useEffect(() => {
-        getStatus(signUpProcess)
-
-    }, [signUpProcess])
-
-
+        getStatus(signUpProcess);
+    }, [signUpProcess]);
 
     const changeStatus = (status) => {
-        setStatus(status)
-        console.log('containerin statusudu', status)
-        console.log(!status)
-    }
+        setStatus(status);
+    };
 
 
     return (

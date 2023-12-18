@@ -219,6 +219,49 @@
     }
   ],
   "registration": [
-    
+    {
+      "email": "gulagaabdul123@gmail.com",
+      "name": "Gulagha ",
+      "surname": "Abdullazada",
+      "password": "G20033002a",
+      "confirmation": "G20033002a",
+      "checked": [
+        "Agreement"
+      ],
+      "id": 1
+    },
+    {
+      "email": "agulagha14138@ada.edu.az",
+      "name": "Gulagha ",
+      "surname": "Abdullazada",
+      "password": "G20033002aa",
+      "confirmation": "G20033002aa",
+      "checked": [
+        "Agreement"
+      ],
+      "id": 2
+    },
+    {
+      "email": "agulagha141w38@ada.edu.az",
+      "name": "Gulagha ",
+      "surname": "Abdullazada",
+      "password": "G20033002aw",
+      "confirmation": "G20033002aw",
+      "checked": [
+        "Agreement"
+      ],
+      "id": 3
+    },
+    {
+      "email": "gulagha@gmail.com",
+      "name": "Gulagha ",
+      "surname": "Abdullazada",
+      "password": "12345678",
+      "confirmation": "12345678",
+      "checked": [
+        "Agreement"
+      ],
+      "id": 4
+    }
   ]
 }
